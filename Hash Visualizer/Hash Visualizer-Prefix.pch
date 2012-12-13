@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Hash Visualizer' target in the 'Hash Visualizer' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
