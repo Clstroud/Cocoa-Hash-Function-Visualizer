@@ -1,4 +1,4 @@
-#Cocoa Hash Function Visualizer
+# Cocoa Hash Function Visualizer
 
 ![](http://cl.ly/image/3z171w0z1503/screenshot_hv.png "Sample screenshot of hash/bucket views side by side")
 
@@ -10,12 +10,12 @@ The cool thing is that I have tried to make this as flexible as possible so that
 
 So what are we even looking at when we see the top image? Well, imagine having an array of length n, then inserting all the hashes your input allows you to generate inside it. Take that, and split it up so that each sqrt(n) chunk stacks on top of its chronological predecessor. You get as a result a sqrt(n) x sqrt(n) image with lots of individual data points. It is simply colorized by hue to make it look nice and perhaps help notice patterns along the horizontal shadings. The right view is illustrating a very nice, level compression distribution.
  
-##Performance
+## Performance
 
 I found this to be an excellent opportunity to learn as much about Grand Central Dispatch (GCD) as possible. Implementing it correctly enabled my MacBook Air to perform the computations required (in some cases 2+ Billion) in fairly reasonable amounts of time. While I'm sure more experienced developers could improve performance even further, I believe that the the app's current runtime is very reasonable.
 
 
-##Preferences
+## Preferences
 
 ![Preferences Window](http://cl.ly/image/1V1B3D152t26/preferences_window.png)
 
@@ -73,7 +73,6 @@ I actually have no idea what, if anything, I want to do with this. If people are
 Please let me know what you think, or if you have any questions:
 
 * Twitter - [@clstr0ud](https://twitter.com/clstr0ud)
-* Email - chris [at] elevecreations · net
 
 ## Credits
 * Original idea - SE user Ian Boyd ([via Stack Exchange](http://programmers.stackexchange.com/a/145633/73699))
